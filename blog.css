@@ -1,0 +1,35 @@
+body {
+ background-color: rgb(12, 6, 6);
+}
+*{ 
+    color: white;
+   
+}
+
+.contenedor {
+  display: flex;
+  gap: 80px;
+  
+  
+  
+}
+.texto {
+    flex-direction: column;
+    max-width: 800px;
+    
+    
+    
+}
+.indice{
+  display: flex;
+ 
+ 
+ 
+}
+.indice{
+    
+    margin-top: 20px;
+}
+li{
+    margin-right: 1600px;
+}

@@ -1,0 +1,38 @@
+   
+    body {
+      background-image: url("img/fondo.png");
+    }
+ body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+  margin: 0;
+}
+h1 {
+  font-size: 60px;
+  color: aliceblue;
+   text-shadow: 
+    -2px -2px 0 black,
+     2px -2px 0 black,
+    -2px  2px 0 black,
+     2px  2px 0 black;
+ 
+}
+h3 {
+  font-size: 24px;
+  color: rgb(255, 252, 252);
+   text-shadow: 
+    -2px -2px 0 black,
+     2px -2px 0 black,
+    -2px  2px 0 black,
+     2px  2px 0 black;
+}
+button{
+    font-size: 18px;
+}
+input{
+    font-size: 18px;
+}
