@@ -20,16 +20,30 @@ body {
     
     
 }
-.indice{
-  display: flex;
- 
- 
- 
+img {
+    max-width: 100%;
+    height: auto;
 }
-.indice{
-    
-    margin-top: 20px;
-}
-li{
-    margin-right: 1600px;
+@media (max-width: 1000px) {
+
+    .contenedor {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .texto {
+        max-width: 90%;
+    }
+
+    img {
+        width: 80%;
+        max-width: 400px;
+        margin-left: 0 !important;
+    }
+
+    table {
+        width: 100% !important;
+        max-width: 500px;
+    }
 }
