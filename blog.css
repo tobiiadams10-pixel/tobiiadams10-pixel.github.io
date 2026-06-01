@@ -9,8 +9,7 @@ body {
 .contenedor {
   display: flex;
   gap: 80px;
-  
-  
+   
   
 }
 .texto {
@@ -23,6 +22,8 @@ body {
 img {
     max-width: 100%;
     height: auto;
+     border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
 }
 @media (max-width: 1000px) {
 
@@ -46,4 +47,42 @@ img {
         width: 100% !important;
         max-width: 500px;
     }
+}
+.timeline{
+    display: flex;
+    
+    gap: 60px;
+    margin: 40px 0;
+    position: relative;
+}
+
+.timeline::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    width: 80%;
+    height: 3px;
+    background-color: white;
+    z-index: 0;
+}
+
+.timeline a{
+    position: relative;
+    text-decoration: none;
+    background-color: rgb(12,6,6);
+    padding-top: 25px;
+    z-index: 1;
+}
+
+.timeline a::before{
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: white;
 }
