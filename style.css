@@ -3,12 +3,16 @@
       background-image: url("img/fondo.png");
     }
  body {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
-  height: 100vh;
+  min-height: 100vh;
   margin: 0;
 }
 h1 {
