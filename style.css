@@ -3,7 +3,7 @@
       background-image: url("img/fondo.png");
     }
  body {
-  background-size: cover;
+   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 
@@ -33,10 +33,12 @@ h3 {
      2px -2px 0 black,
     -2px  2px 0 black,
      2px  2px 0 black;
+     margin-top: -1%;
 }
 button{
     font-size: 18px;
+     transition: 0.3s;
 }
-input{
-    font-size: 18px;
+.button:hover{
+    transform:  scale(1.2);
 }
