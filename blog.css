@@ -1,5 +1,6 @@
 body {
  background-color: rgb(12, 6, 6);
+  margin: 0;
 }
 *{ 
     color: white;
@@ -47,10 +48,11 @@ img {
         width: 100% !important;
         max-width: 500px;
     }
+   
 }
 .timeline{
     display: flex;
-    
+    flex-wrap: wrap;
     gap: 60px;
     margin: 40px 0;
     position: relative;
@@ -58,16 +60,7 @@ img {
     
 }
 
-.timeline::before{
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 10%;
-    width: 80%;
-    height: 3px;
-    background-color: white;
-    z-index: 0;
-}
+
 
 .timeline a{
     position: relative;
@@ -96,3 +89,75 @@ img {
 a {
     text-align: center;
 }
+.hamburguesa {
+    background: none;
+    border: none;
+    font-size: 35px;
+    cursor: pointer;
+    color: white;
+    opacity: 0.8;
+     transition: 0.3s;
+     
+   
+}
+.hamburguesa:hover {
+    opacity: 1; 
+}
+.nav-links {
+    display: flex;
+    flex-direction: column;
+
+    padding: 0;
+    margin: 10px 0;
+    list-style: none;
+    transition: 0.3s;
+    background-color: rgb(5, 5, 5);
+                         
+        padding-top: px;
+    display: none;
+   
+}
+
+
+ .nav-links a {
+    color: white;
+    text-decoration: none;
+    
+ 
+                                    
+}
+.nav-container.abierto {
+  
+    background-color: rgb(5, 5, 5);
+    width: 120px;
+    padding: 10px;
+    border-radius: 0px;
+    opacity: 0.95;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+  
+}
+.nav-links li {
+    margin: 20px 0;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+}
+nav {
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    border-radius: 0%;
+}
+.nav-links li a {
+    display: inline-block;
+    transition: transform 0.2s ease;
+    opacity: 0.9 ;
+}
+
+.nav-links li a:hover {
+    transform: scale(1.1);
+}
+
+
+                              
